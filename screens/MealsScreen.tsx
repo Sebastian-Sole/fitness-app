@@ -1,15 +1,30 @@
-import { Card, View, Image } from "react-native-ui-lib";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
+import { Card } from "@rneui/themed";
 
 const MealsScreen = () => {
   return (
-    <View>
-      <Card flex center>
-        {}
+    <View
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        flexWrap: "wrap",
+        alignItems: "center",
+      }}
+    >
+      <Card
+        containerStyle={{
+          padding: 0,
+          width: "40%",
+        }}
+      >
+        {/* <Card.Divider /> */}
+
         <Card.Image
           source={{
-            uri: "https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9&fm=jpg&q=80",
+            uri: "https://awildgeographer.files.wordpress.com/2015/02/john_muir_glacier.jpg",
           }}
+          style={{ width: "100%", margin: 0 }}
         />
       </Card>
     </View>
